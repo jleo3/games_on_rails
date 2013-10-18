@@ -5,5 +5,6 @@ describe "When I visit the home page" do
     visit "/"
 
     page.should have_content "SECRET NUMBER"
+    click_link "secret-number"
   end
 end
