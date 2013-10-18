@@ -4,6 +4,8 @@ GamesOnRails::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   resources :secret_numbers, :only => [:new, :show]
+  resources :rock_paper_scissors, :only => [:new, :show]
+
   root 'welcome#index'
 
   # Example of regular route:
