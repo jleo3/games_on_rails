@@ -8,6 +8,10 @@
 </head>
 <body>
 
+<% unless controller.controller_name == 'games' %>
+  <%= link_to '< Back to Game Center', '/' %>
+<% end %>
+
 <%= yield %>
 
 </body>
