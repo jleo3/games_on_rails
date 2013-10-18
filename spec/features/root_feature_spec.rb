@@ -6,5 +6,7 @@ describe "When I visit the home page" do
 
     page.should have_content "SECRET NUMBER"
     click_link "secret-number"
+
+    page.should have_content "Welcome to Secret Number!"
   end
 end
